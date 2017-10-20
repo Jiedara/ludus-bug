@@ -11,10 +11,10 @@ public class Diode : MonoBehaviour {
 	void Start () {
 		output = gameObject.transform.GetChild (0);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	void OnTriggerEnter(Collider col){
