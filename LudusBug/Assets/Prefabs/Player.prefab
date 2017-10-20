@@ -22,10 +22,11 @@ GameObject:
   - component: {fileID: 54510405182094298}
   - component: {fileID: 114352033191005564}
   - component: {fileID: 65458859555099902}
+  - component: {fileID: 114591525692343184}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -155,3 +156,17 @@ MonoBehaviour:
   down: 274
   left: 276
   right: 275
+--- !u!114 &114591525692343184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593204740818060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57664c54de0f8604d956aa8496d2128b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnergyConsumptionSpeed: 1
+  StartEnergy: 500
+  CurrEnergy: 0
