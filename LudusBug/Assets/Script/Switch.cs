@@ -7,9 +7,6 @@ public class Switch : MonoBehaviour {
 	[SerializeField]
 	bool _state;
 
-
-
-
 	public List<Program> list = new List<Program>();
 
 	// Use this for initialization
