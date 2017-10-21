@@ -24,7 +24,7 @@ public class Save : MonoBehaviour {
 
     public void SetSave()
     {
-        currentEnergy = playerEnergy.CurrEnergy + GameManager.surplusEnergyOnRespawn;
+        currentEnergy = playerEnergy._currEnergy + GameManager.surplusEnergyOnRespawn;
         
         /*
         for (int i = 0; i < switches.Length; i++)
@@ -36,7 +36,7 @@ public class Save : MonoBehaviour {
 
     public void GetSave() {
         playerEnergy.transform.position = transform.position;
-        playerEnergy.CurrEnergy = currentEnergy;
+        playerEnergy._currEnergy = currentEnergy;
 
         if (playerPowers.CurrSave > 0) {
             playerPowers.saves[playerPowers.CurrSave] = null;

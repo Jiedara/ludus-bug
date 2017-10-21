@@ -14,8 +14,8 @@ public class PlayerEnergy : MonoBehaviour {
     float StartEnergy = 500;
     [SerializeField]
     float ResistanceCoeff = 25;
-    [SerializeField]
-    float _currEnergy;
+    
+    public float _currEnergy;
     PlayerPowers playerPowers;
 
 
@@ -28,8 +28,9 @@ public class PlayerEnergy : MonoBehaviour {
 	private bool _isSpendingEnergy;
 	private float _energySpend;
 
-		return _isSpendingEnergy;
+
 	public bool isSpendingEnergy(){
+		return _isSpendingEnergy;
 	}
 	public float getEnergySpend(){
 		return _energySpend;
@@ -37,7 +38,7 @@ public class PlayerEnergy : MonoBehaviour {
 	}
     void Awake () {
     // Use this for initialization
-        CurrEnergy = StartEnergy;
+        _currEnergy = StartEnergy;
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
         playerPowers = GetComponent<PlayerPowers>();
     }
@@ -61,10 +62,10 @@ public class PlayerEnergy : MonoBehaviour {
     }
 
     void Update () {
-        CurrEnergy = CurrEnergy - Time.deltaTime * EnergyConsumptionSpeed;
+        _currEnergy = _currEnergy - Time.deltaTime * EnergyConsumptionSpeed;
 		CalcMaterial ();
 		_isSpendingEnergy = Input.GetButton ("Fire1");
-        if (CurrEnergy <= 0)
+        if (_currEnergy <= 0)
         {
             Die();
         }
@@ -78,8 +79,8 @@ public class PlayerEnergy : MonoBehaviour {
 	}
 
 	public void AddEnergy(float amount){
-		CurrEnergy += amount;
-		CurrEnergy = Mathf.Clamp (CurrEnergy, -1, StartEnergy);
+		_currEnergy += amount;
+		_currEnergy = Mathf.Clamp (_currEnergy, -1, StartEnergy);
 	}
 
 	private void CalcMaterial(){
@@ -87,7 +88,7 @@ public class PlayerEnergy : MonoBehaviour {
 		if (_isSpendingEnergy) {
 			playerColor = Color.red;
 		} else {
-			float ratio = CurrEnergy / StartEnergy;
+			float ratio = _currEnergy / StartEnergy;
 			float r = lowestColor.r * (1 - ratio) + highestColor.r * ratio;
 			float g = lowestColor.g * (1 - ratio) + highestColor.g * ratio;
 			float b = lowestColor.b * (1 - ratio) + highestColor.b * ratio;
