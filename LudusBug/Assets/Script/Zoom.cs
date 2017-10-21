@@ -26,6 +26,9 @@ public class Zoom : MonoBehaviour {
 	void Start () {
 		if (!Camera.main) {
 			Debug.LogWarning ("No Main Camera ! it should have tag MainCamera");
+		} else {
+			GameObject p = GameObject.FindGameObjectWithTag ("Player");
+			gameObject.transform.position = (p.transform.position + new Vector3 (0, 20, -20));
 		}
 	}
 	
