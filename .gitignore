@@ -43,4 +43,6 @@ graphical files
 ===========
 *~
 *.kra
+*.kra.meta
+*.blend1.meta
 *.blend1
