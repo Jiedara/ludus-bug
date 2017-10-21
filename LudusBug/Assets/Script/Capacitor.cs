@@ -27,7 +27,7 @@ public class Capacitor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (player) {
-			player.RestoreEnergy (regenerationSpeed*Time.deltaTime);
+			player.AddEnergy (regenerationSpeed*Time.deltaTime);
 		}
 	}
 }
