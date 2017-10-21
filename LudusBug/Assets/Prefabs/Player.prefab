@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4913150052043254}
   - component: {fileID: 54510405182094298}
-  - component: {fileID: 114352033191005564}
   - component: {fileID: 65458859555099902}
   - component: {fileID: 114591525692343184}
+  - component: {fileID: 114369428608179332}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -140,7 +140,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4, z: 0.4}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &114352033191005564
+--- !u!114 &114369428608179332
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -148,14 +148,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1593204740818060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24e61f1cff3cc0b4aa06fdfc8a3039d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 81b87e65aaf983d4eba3ab421f5ccd2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
-  up: 273
-  down: 274
-  left: 276
-  right: 275
+  speed: 5
 --- !u!114 &114591525692343184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,4 +165,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnergyConsumptionSpeed: 1
   StartEnergy: 500
+  ResistanceCoeff: 25
   CurrEnergy: 0
