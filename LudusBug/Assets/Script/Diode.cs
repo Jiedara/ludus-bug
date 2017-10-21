@@ -22,4 +22,12 @@ public class Diode : MonoBehaviour {
 			col.gameObject.transform.position = output.transform.position;
 		}
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
 }
