@@ -18,8 +18,10 @@ public class Program : MonoBehaviour {
 	}
 
 	public void Switch() {
-		Open = !Open;
-	}
+        if (PlayerPowers.powerOk) {
+            Open = !Open;
+        }
+    }
 
 	void Start(){
 		gameObject.GetComponent<Renderer>().material.color = color;

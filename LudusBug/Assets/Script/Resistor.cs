@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resistor : MonoBehaviour {
     Collider trigger;
     Renderer rd;
-    float resistorResetTime;
+    float resistorResetTime = 2;
     IEnumerator disableForceFieldNow;
 
 	// Use this for initialization
