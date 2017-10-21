@@ -19,7 +19,6 @@ public class Resistor : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            print("collsisons!");
             StartCoroutine(disableForceFieldNow);
         }
     }
