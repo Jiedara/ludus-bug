@@ -28,7 +28,7 @@ public class PlayerEnergy : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    void Awake () {
         CurrEnergy = StartEnergy;
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
         playerPowers = GetComponent<PlayerPowers>();
@@ -55,6 +55,11 @@ public class PlayerEnergy : MonoBehaviour {
     void Update () {
         CurrEnergy = CurrEnergy - Time.deltaTime * EnergyConsumptionSpeed;
 		CalcMaterial ();
+        if (CurrEnergy <= 0)
+        {
+            Die();
+
+        }
 	}
 
 	public void RestoreEnergy(float amount){
@@ -74,8 +79,9 @@ public class PlayerEnergy : MonoBehaviour {
 
     private void Die()
     {
-        StopCoroutine(playerPowers.WaitForSaveOkNow);
-        StartCoroutine(playerPowers.WaitForSaveOkNow);
+        //StopCoroutine(playerPowers.WaitForSaveOkNow);
+        //StartCoroutine(playerPowers.WaitForSaveOkNow);
+        print("dying: "+ playerPowers.CurrSave);
         playerPowers.saves[playerPowers.CurrSave].GetComponent<Save>().GetSave();
 
 

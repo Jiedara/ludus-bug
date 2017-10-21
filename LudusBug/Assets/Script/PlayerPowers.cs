@@ -17,28 +17,29 @@ public class PlayerPowers : MonoBehaviour {
     private void Start()
     {
         WaitForSaveOkNow = WaitForSaveOk(GameManager.WaitTimeAfterRespawnToSaveAgain);
-        saves = new GameObject[GameManager.maxSaves];
+        saves = new GameObject[GameManager.maxSaves+2];
+        save = (GameObject)Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
+        save.GetComponent<Save>().SetSave();
+        saves[0] = save;
     }
 
     void Update () {
         if (Input.GetButtonDown("Fire1") && GameManager.powerOk  /* && saveOk */)
         {
-            if (GameManager.canOverSave) {
-                if (CurrSave >= GameManager.maxSaves){
-                    CurrSave = 0;
-                }
-                if (saves[CurrSave] != null)
-                {
-                    Destroy(saves[CurrSave]);
-                }
+            if (GameManager.canOverSave && saves[CurrSave+1] != null)
+            {
+                    Destroy(saves[CurrSave+1]);
 
             }
-            if (CurrSave < GameManager.maxSaves)
+            if (CurrSave+1 <= GameManager.maxSaves)
             {
+                CurrSave++;
                 save = (GameObject) Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
                 save.GetComponent<Save>().SetSave();
                 saves[CurrSave] = save;
-                CurrSave++;
+                if (GameManager.canOverSave && CurrSave >= GameManager.maxSaves) {
+                    CurrSave = 1;
+                }
             }
         }
 	}
