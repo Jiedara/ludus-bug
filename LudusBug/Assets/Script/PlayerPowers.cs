@@ -26,10 +26,14 @@ public class PlayerPowers : MonoBehaviour {
     void Update () {
         if (Input.GetButtonDown("Fire1") && GameManager.powerOk  /* && saveOk */)
         {
+            if (GameManager.canOverSave && CurrSave + 1 >= GameManager.maxSaves)
+            {
+                Destroy(saves[1]);
+                CurrSave = 0;
+            }
             if (GameManager.canOverSave && saves[CurrSave+1] != null)
             {
                     Destroy(saves[CurrSave+1]);
-
             }
             if (CurrSave+1 <= GameManager.maxSaves)
             {
@@ -37,9 +41,7 @@ public class PlayerPowers : MonoBehaviour {
                 save = (GameObject) Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
                 save.GetComponent<Save>().SetSave();
                 saves[CurrSave] = save;
-                if (GameManager.canOverSave && CurrSave >= GameManager.maxSaves) {
-                    CurrSave = 1;
-                }
+
             }
         }
 	}

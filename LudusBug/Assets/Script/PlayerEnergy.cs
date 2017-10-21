@@ -81,10 +81,8 @@ public class PlayerEnergy : MonoBehaviour {
     {
         //StopCoroutine(playerPowers.WaitForSaveOkNow);
         //StartCoroutine(playerPowers.WaitForSaveOkNow);
-        print("dying: "+ playerPowers.CurrSave);
+        print(playerPowers.CurrSave);
         playerPowers.saves[playerPowers.CurrSave].GetComponent<Save>().GetSave();
-
-
     }
 
 }

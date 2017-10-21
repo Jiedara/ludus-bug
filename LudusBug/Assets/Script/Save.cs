@@ -37,12 +37,14 @@ public class Save : MonoBehaviour {
     public void GetSave() {
         playerEnergy.transform.position = transform.position;
         playerEnergy.CurrEnergy = currentEnergy;
-        print(playerPowers.CurrSave);
 
-        if (playerPowers.CurrSave != 0) {
-            print("playerPowers.CurrSave is not 0; it is " + playerPowers.CurrSave);
+        if (playerPowers.CurrSave > 0) {
             playerPowers.saves[playerPowers.CurrSave] = null;
-            playerPowers.CurrSave -= 1;
+            for (int i=0; i < GameManager.maxSaves; i++) {
+                if (playerPowers.saves[i] != null){
+                    playerPowers.CurrSave = i;
+                }
+            }
             print(playerPowers.CurrSave);
             Destroy(gameObject);
         }
