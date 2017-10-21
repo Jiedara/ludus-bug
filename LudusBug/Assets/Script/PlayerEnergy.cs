@@ -9,7 +9,7 @@ public class PlayerEnergy : MonoBehaviour {
     [SerializeField]
     float StartEnergy = 500;
     [SerializeField]
-    float ResistanceCoeff = 5;
+    float ResistanceCoeff = 25;
     [SerializeField]
     float CurrEnergy;
 
@@ -19,9 +19,23 @@ public class PlayerEnergy : MonoBehaviour {
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
 	}
 
-    // on trigger enter of fast zone, EnergyConsumptionSpeed *=resistanceCoeff; 
-    // on trigger exit of fast zone, ECS = baseECS
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Resistance")
+        {
+            EnergyConsumptionSpeed *= ResistanceCoeff;
+            PlayerPowers.powerOk = false;
+        }
+    }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Resistance")
+        {
+            EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
+            PlayerPowers.powerOk = true;
+        }
+    }
 
     void Update () {
         CurrEnergy = CurrEnergy - Time.deltaTime * EnergyConsumptionSpeed;
