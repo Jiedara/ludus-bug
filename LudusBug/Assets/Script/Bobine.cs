@@ -38,10 +38,9 @@ public class Bobine : MonoBehaviour {
         isAccelerating = true;
         playerMovement.speed *= acceleration;
         yield return new WaitForSeconds(wait);
-        if (isAccelerating)
-        {
+        
             playerMovement.speed = playerMovement.baseSpeed;
             isAccelerating = false;
         }
-    }
+    
 }
