@@ -7,13 +7,14 @@ using UnityEngine;
 public class PlayerMovement2 : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField]
-    private float speed;
+    public float speed;
+    public float baseSpeed = 5;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        speed = baseSpeed;
     }
 
 
