@@ -9,6 +9,7 @@ public class Transistor : MonoBehaviour {
 
     private PlayerEnergy player;
     private Renderer[] rd;
+    private Collider[] cols;
     private bool casse = false;
 
     void OnTriggerEnter(Collider col)
@@ -25,7 +26,7 @@ public class Transistor : MonoBehaviour {
     void Start()
     {
         rd = GetComponentsInChildren<Renderer>();
-
+        cols = GetComponentsInChildren<Collider>();
     }
 
     // Update is called once per frame
@@ -40,6 +41,9 @@ public class Transistor : MonoBehaviour {
                 foreach(Renderer rend in rd)
                 {
                     rend.enabled = !rend.enabled;
+                }
+                foreach (Collider col in cols) {
+                    col.enabled = false;
                 }
                 casse = true;
             }
