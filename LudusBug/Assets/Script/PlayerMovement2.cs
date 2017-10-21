@@ -24,5 +24,6 @@ public class PlayerMovement2 : MonoBehaviour
 		float vDir = Input.GetAxisRaw ("Vertical") * speed * Time.deltaTime;
 
 		transform.Translate(new Vector3(hDir,0,vDir));
+        rb.velocity = new Vector3(0,0,0);
     }
 }
