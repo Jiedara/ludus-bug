@@ -8,8 +8,9 @@ public class Wire : MonoBehaviour {
 	public Mode mode;
 
 	//public Scene scene;
-	const string folder = "Scene/";
+	public const string folder = "Scene/";
 	public string sceneName;
+	public int entryPoint = 1;
 
 	public Transform teleportationPoint;
 
@@ -31,8 +32,9 @@ public class Wire : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.CompareTag ("Player")) {
 			//SceneManager.SetActiveScene (scene);
-			if(mode == Mode.ChangeScene)
-				SceneManager.LoadScene(folder+sceneName);
+			if (mode == Mode.ChangeScene) {
+				FindObjectOfType<SceneHandler>().EnterScene(folder + sceneName,entryPoint);
+			}
 			if (mode == Mode.Teleportation)
 				col.gameObject.transform.position = teleportationPoint.transform.position;
 		}

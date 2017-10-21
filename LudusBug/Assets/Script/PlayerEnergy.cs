@@ -59,6 +59,7 @@ public class PlayerEnergy : MonoBehaviour {
 		float b = lowestColor.b * (1 - ratio) + highestColor.b * ratio;
 		float a = lowestColor.a * (1 - ratio) + highestColor.a * ratio;
 		Color playerColor = new Color(r,g,b,a);
-		this.gameObject.GetComponentInChildren<Renderer>().material.color = playerColor;
+
+		this.gameObject.GetComponentInChildren<Renderer>().material.SetColor("_Color",playerColor);
 	}
 }

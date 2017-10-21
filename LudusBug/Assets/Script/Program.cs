@@ -26,4 +26,5 @@ public class Program : MonoBehaviour {
 	void Start(){
 		gameObject.GetComponent<Renderer>().material.color = color;
 	}
+		
 }
