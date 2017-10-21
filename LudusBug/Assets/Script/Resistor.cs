@@ -20,6 +20,7 @@ public class Resistor : MonoBehaviour {
         if (collision.gameObject.CompareTag("Player"))
         {
             StartCoroutine(disableForceFieldNow);
+            GetComponent<AudioSource>().Play();
         }
     }
 

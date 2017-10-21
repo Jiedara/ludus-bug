@@ -18,7 +18,9 @@ public class PlayerEnergy : MonoBehaviour {
     public float _currEnergy;
     PlayerPowers playerPowers;
 
-
+    private AudioSource audioSource;
+    public AudioClip respawn;
+    public AudioClip perteEnergie;
 
     [SerializeField]
 	Color lowestColor;
@@ -105,6 +107,9 @@ public class PlayerEnergy : MonoBehaviour {
         //StartCoroutine(playerPowers.WaitForSaveOkNow);
         print(playerPowers.CurrSave);
         playerPowers.saves[playerPowers.CurrSave].GetComponent<Save>().GetSave();
+        audioSource.clip = respawn;
+        audioSource.Play();
+
     }
 
 }
