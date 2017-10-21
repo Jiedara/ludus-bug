@@ -1050,7 +1050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4987223840299804, guid: 6d11870ec7b584c468936dfa510c3881, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114812342917729310, guid: 6d11870ec7b584c468936dfa510c3881,
         type: 2}
@@ -1228,7 +1228,7 @@ Transform:
   - {fileID: 1399184612}
   - {fileID: 7302078}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!1 &1081359587
 GameObject:
@@ -2409,6 +2409,11 @@ Prefab:
     - target: {fileID: 4002221901233564, guid: 27e8640d331eae644aab3fb423b998e9, type: 2}
       propertyPath: m_RootOrder
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996163412308988, guid: 27e8640d331eae644aab3fb423b998e9,
+        type: 2}
+      propertyPath: sceneName
+      value: Tuto
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27e8640d331eae644aab3fb423b998e9, type: 2}

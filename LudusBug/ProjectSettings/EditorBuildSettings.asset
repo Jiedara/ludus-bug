@@ -12,5 +12,8 @@ EditorBuildSettings:
     path: Assets/Scene/test.unity
     guid: f78f9963949043447a96418a760ef169
   - enabled: 1
-    path: Assets/Scene/Empty.unity
+    path: Assets/Scene/MotherBoard.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scene/Tuto.unity
     guid: 00000000000000000000000000000000
