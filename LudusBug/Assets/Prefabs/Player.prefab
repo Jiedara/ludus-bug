@@ -74,7 +74,7 @@ Transform:
   m_GameObject: {fileID: 1727050477688940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4913150052043254}
   m_RootOrder: 0
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1664550534355080}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 10, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4913150052043254}
@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1593204740818060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37, y: 0.5, z: 133.58}
+  m_LocalPosition: {x: -47.6, y: 1.004, z: 133.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4354293210583564}
@@ -171,7 +171,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Size: {x: 0.7, y: 2, z: 0.7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82660303323417726
 AudioSource:
@@ -297,6 +297,8 @@ MonoBehaviour:
   StartEnergy: 500
   ResistanceCoeff: 25
   _currEnergy: 0
+  respawn: {fileID: 8300000, guid: c56b05f7028cfae41aac9f08a3f4789a, type: 3}
+  perteEnergie: {fileID: 8300000, guid: c61a1a158941b1d4187781162a58d421, type: 3}
   lowestColor: {r: 1, g: 0.99168354, b: 0.6985294, a: 0}
   highestColor: {r: 0.18382353, g: 0.93245435, b: 1, a: 0}
 --- !u!114 &114611768408368452
