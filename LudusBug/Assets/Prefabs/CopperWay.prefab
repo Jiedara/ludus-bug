@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65988904431008814}
   - component: {fileID: 54074596143024714}
   m_Layer: 0
-  m_Name: Copper
+  m_Name: CopperWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

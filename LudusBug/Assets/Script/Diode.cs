@@ -18,7 +18,8 @@ public class Diode : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		print ("diode enter");
-		col.gameObject.transform.position = output.transform.position;
+		if (col.gameObject.CompareTag ("Player")) {
+			col.gameObject.transform.position = output.transform.position;
+		}
 	}
 }
