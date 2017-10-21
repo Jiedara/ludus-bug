@@ -18,7 +18,7 @@ public class Program : MonoBehaviour {
 	}
 
 	public void Switch() {
-        if (PlayerPowers.powerOk) {
+        if (GameManager.powerOk) {
             Open = !Open;
         }
     }

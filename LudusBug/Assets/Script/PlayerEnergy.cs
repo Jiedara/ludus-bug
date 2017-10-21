@@ -15,9 +15,12 @@ public class PlayerEnergy : MonoBehaviour {
     [SerializeField]
     float ResistanceCoeff = 25;
     [SerializeField]
-    float CurrEnergy;
+    float _currEnergy;
+    PlayerPowers playerPowers;
 
-	[SerializeField]
+
+
+    [SerializeField]
 	Color lowestColor;
 	[SerializeField]
 	Color highestColor;
@@ -25,26 +28,26 @@ public class PlayerEnergy : MonoBehaviour {
 	private bool _isSpendingEnergy;
 	private float _energySpend;
 
-	public bool isSpendingEnergy(){
 		return _isSpendingEnergy;
+	public bool isSpendingEnergy(){
 	}
 	public float getEnergySpend(){
 		return _energySpend;
+
 	}
-
-
-	// Use this for initialization
-	void Start () {
+    void Awake () {
+    // Use this for initialization
         CurrEnergy = StartEnergy;
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
-	}
+        playerPowers = GetComponent<PlayerPowers>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Resistance")
         {
             EnergyConsumptionSpeed *= ResistanceCoeff;
-            PlayerPowers.powerOk = false;
+            GameManager.powerOk = false;
         }
     }
 
@@ -53,15 +56,18 @@ public class PlayerEnergy : MonoBehaviour {
         if (other.gameObject.tag == "Resistance")
         {
             EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
-            PlayerPowers.powerOk = true;
+            GameManager.powerOk = true;
         }
     }
 
     void Update () {
         CurrEnergy = CurrEnergy - Time.deltaTime * EnergyConsumptionSpeed;
 		CalcMaterial ();
-
 		_isSpendingEnergy = Input.GetButton ("Fire1");
+        if (CurrEnergy <= 0)
+        {
+            Die();
+        }
 		if (_isSpendingEnergy) {
 			if (_energySpend <= 0)
 				_energySpend = 1;
@@ -91,4 +97,13 @@ public class PlayerEnergy : MonoBehaviour {
 
 		this.gameObject.GetComponentInChildren<Renderer>().material.color = playerColor;
 	}
+
+    private void Die()
+    {
+        //StopCoroutine(playerPowers.WaitForSaveOkNow);
+        //StartCoroutine(playerPowers.WaitForSaveOkNow);
+        print(playerPowers.CurrSave);
+        playerPowers.saves[playerPowers.CurrSave].GetComponent<Save>().GetSave();
+    }
+
 }
