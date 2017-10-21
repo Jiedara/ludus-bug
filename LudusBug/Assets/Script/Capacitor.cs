@@ -12,10 +12,14 @@ public class Capacitor : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider col){
+		if (!col.gameObject.CompareTag ("Player"))
+			return;
 		print ("player enter in capacitor area");
 		player = col.gameObject.GetComponent<PlayerEnergy> ();
 	}
 	void OnTriggerExit(Collider col){
+		if (!col.gameObject.CompareTag ("Player"))
+			return;
 		print ("player exit capacitor area");
 		player = null;
 	}
