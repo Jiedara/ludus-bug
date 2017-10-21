@@ -40,7 +40,8 @@ public class Switch : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.CompareTag ("Player")) {
 			SwitchProgramsState ();
-		}
+            GetComponent<AudioSource>().Play();
+        }
 	}
 
 }

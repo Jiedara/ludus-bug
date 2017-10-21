@@ -20,6 +20,7 @@ public class Program : MonoBehaviour {
 	public void Switch() {
         if (GameManager.powerOk) {
             Open = !Open;
+           
         }
     }
 
