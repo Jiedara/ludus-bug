@@ -64,9 +64,9 @@ public class PlayerEnergy : MonoBehaviour {
     }
 
     void Update () {
-        _currEnergy = _currEnergy - Time.deltaTime * EnergyConsumptionSpeed;
+		AddEnergy( - Time.deltaTime * EnergyConsumptionSpeed);
 		CalcMaterial ();
-		_isSpendingEnergy = Input.GetButton ("Fire1");
+		_isSpendingEnergy = Input.GetButton ("Fire2");
         if (_currEnergy <= 0)
         {
             Die();
@@ -77,28 +77,31 @@ public class PlayerEnergy : MonoBehaviour {
 			float amount = _energySpend * overvoltageSpeed * Time.deltaTime;
 			AddEnergy (-amount);
 			_energySpend += amount;
+		} else {
+			_energySpend = 0;
 		}
 	}
 
 	public void AddEnergy(float amount){
 		_currEnergy += amount;
 		_currEnergy = Mathf.Clamp (_currEnergy, -1, StartEnergy);
+		if (_currEnergy <= 0) {
+			Die ();
+		}
 	}
 
 	private void CalcMaterial(){
 		Color playerColor;
-		if (_isSpendingEnergy) {
-			playerColor = Color.red;
-		} else {
-			float ratio = _currEnergy / StartEnergy;
-			float r = lowestColor.r * (1 - ratio) + highestColor.r * ratio;
-			float g = lowestColor.g * (1 - ratio) + highestColor.g * ratio;
-			float b = lowestColor.b * (1 - ratio) + highestColor.b * ratio;
-			float a = lowestColor.a * (1 - ratio) + highestColor.a * ratio;
-			playerColor = new Color (r, g, b, a);
-		}
+		//float light = _isSpendingEnergy ? 2 : 0;
+		float ratio = _currEnergy / StartEnergy;
+		float r = lowestColor.r * (1 - ratio) + highestColor.r * ratio;
+		float g = lowestColor.g * (1 - ratio) + highestColor.g * ratio;
+		float b = lowestColor.b * (1 - ratio) + highestColor.b * ratio;
+		playerColor = new Color (r, g, b);
 
-		this.gameObject.GetComponentInChildren<Renderer>().material.color = playerColor;
+		Renderer renderer = this.gameObject.GetComponentInChildren<Renderer> ();
+		renderer.material.color = playerColor;
+		//this.gameObject.transform.GetChild(0).localScale=Vector3.one*(1+Mathf.Log(_energySpend)*3);
 	}
 
     private void Die()
