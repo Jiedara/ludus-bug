@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4806776599682364}
   - component: {fileID: 33464931902792102}
   - component: {fileID: 23732978150070190}
+  - component: {fileID: 114521926181305420}
   m_Layer: 0
   m_Name: BGSphere
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1908240180218274}
   m_LocalRotation: {x: 0.68125755, y: 0.68125755, z: -0.18944174, w: 0.18944174}
   m_LocalPosition: {x: -34.9, y: 55.1, z: 94}
-  m_LocalScale: {x: 1000.00006, y: 1000, z: 1000.00006}
+  m_LocalScale: {x: 30000, y: 30000, z: 30000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,4 +80,25 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1908240180218274}
-  m_Mesh: {fileID: 4300000, guid: 083c1cf9e9f47f344ae6f41af721e3de, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7522670912c542c41b3780e3f425d182, type: 3}
+--- !u!114 &114521926181305420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908240180218274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8adfd7c5835e644b8a8b9a2bc1599b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texs:
+  - {fileID: 2800000, guid: 0aae206a7e249434cbd865b67c6b7ac1, type: 3}
+  - {fileID: 2800000, guid: 58a65646962b8e642a7309956bce0a44, type: 3}
+  - {fileID: 2800000, guid: fe794b22ffdf6c84f910a4804a9a1cd9, type: 3}
+  - {fileID: 2800000, guid: 0e0fbe69d0003854eb32250fa1ea804d, type: 3}
+  - {fileID: 2800000, guid: 62b4f852ebc789f4789604a31427dbb1, type: 3}
+  - {fileID: 2800000, guid: d0222664f0fbaa8439a0d1579ab4714b, type: 3}
+  - {fileID: 2800000, guid: 225a9a13890081f46a51086c7de1d120, type: 3}
+  - {fileID: 2800000, guid: 124adce52011e8945a14d1282e985616, type: 3}
+  - {fileID: 2800000, guid: 09977fdcba95e494fad7571e1c45e6c5, type: 3}
