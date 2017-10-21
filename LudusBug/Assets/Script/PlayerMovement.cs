@@ -53,12 +53,19 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Circuit"))
         {
             onCircuit += 1;
+            print("circcuit + :" + onCircuit);
+
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        onCircuit -= 1;
+        if (other.gameObject.CompareTag("Circuit"))
+        {
+            onCircuit -= 1;
+            print("circcuit - :" + onCircuit);
+
+        }
         if (other.gameObject.CompareTag("Circuit") && onCircuit <= 0)
         {
             if (Input.GetKey(up))
