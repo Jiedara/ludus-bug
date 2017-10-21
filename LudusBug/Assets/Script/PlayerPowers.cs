@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPowers : MonoBehaviour {
 
@@ -12,16 +13,31 @@ public class PlayerPowers : MonoBehaviour {
 
     public IEnumerator WaitForSaveOkNow;
 
+    void OnDisable() {
+        SceneManager.sceneLoaded -= makeSavePoint;
 
-
-    private void Start()
+    }
+     void OnEnable()
     {
-        WaitForSaveOkNow = WaitForSaveOk(GameManager.WaitTimeAfterRespawnToSaveAgain);
-        saves = new GameObject[GameManager.maxSaves+2];
+        SceneManager.sceneLoaded += makeSavePoint;
+    }
+
+    void makeSavePoint(Scene scene, LoadSceneMode mode)
+    {
+        saves = new GameObject[GameManager.maxSaves + 2];
+        GameManager.maxSaves = GameManager.maxSavesTmp;
         save = (GameObject)Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
         save.GetComponent<Save>().SetSave();
         saves[0] = save;
     }
+
+    /*
+    private void Start()
+    {
+        save = (GameObject)Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
+        save.GetComponent<Save>().SetSave();
+        saves[0] = save;
+    }*/
 
     void Update () {
         if (Input.GetButtonDown("Fire1") && GameManager.powerOk  /* && saveOk */)

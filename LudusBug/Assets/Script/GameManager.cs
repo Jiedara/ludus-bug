@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     public static bool powerOk = true;
     public static bool canOverSave = true;
-    [SerializeField]
     public static int maxSaves = 3;
+    [SerializeField]
+    public static int maxSavesTmp = 3;
+
 
 
 
