@@ -16,6 +16,8 @@ public class Capacitor : MonoBehaviour {
 			return;
 		print ("player enter in capacitor area");
 		player = col.gameObject.GetComponent<PlayerEnergy> ();
+        GetComponent<AudioSource>().Play();
+
 	}
 	void OnTriggerExit(Collider col){
 		if (!col.gameObject.CompareTag ("Player"))
