@@ -12,8 +12,14 @@ public class Switch : MonoBehaviour {
 
 	public List<Program> list = new List<Program>();
 
-	// Use this for initialization
-	void Start () {
+    public bool State
+    {
+        get { return _state; }
+        set { _state = value; }
+    }
+
+    // Use this for initialization
+    void Start () {
 		refreshMaterial ();
 	}
 	
@@ -23,11 +29,11 @@ public class Switch : MonoBehaviour {
 	}
 
 	public void refreshMaterial(){
-		gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = _state?Color.green:Color.red;
+		gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = State?Color.green:Color.red;
 	}
 
-	private void SwitchProgramsState(){
-		_state = !_state;
+	public void SwitchProgramsState(){
+		State = !State;
 		foreach (Program prog in list) {
 			prog.Switch ();
 		}

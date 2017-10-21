@@ -11,25 +11,35 @@ public class PlayerEnergy : MonoBehaviour {
     [SerializeField]
     float ResistanceCoeff = 25;
     [SerializeField]
-    float CurrEnergy;
+    float _currEnergy;
+    PlayerPowers playerPowers;
 
-	[SerializeField]
+
+
+    [SerializeField]
 	Color lowestColor;
 	[SerializeField]
 	Color highestColor;
 
-	// Use this for initialization
-	void Start () {
+    public float CurrEnergy
+    {
+        get {return _currEnergy;}
+        set { _currEnergy = value;}
+    }
+
+    // Use this for initialization
+    void Start () {
         CurrEnergy = StartEnergy;
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
-	}
+        playerPowers = GetComponent<PlayerPowers>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Resistance")
         {
             EnergyConsumptionSpeed *= ResistanceCoeff;
-            PlayerPowers.powerOk = false;
+            GameManager.powerOk = false;
         }
     }
 
@@ -38,7 +48,7 @@ public class PlayerEnergy : MonoBehaviour {
         if (other.gameObject.tag == "Resistance")
         {
             EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
-            PlayerPowers.powerOk = true;
+            GameManager.powerOk = true;
         }
     }
 
@@ -61,4 +71,14 @@ public class PlayerEnergy : MonoBehaviour {
 		Color playerColor = new Color(r,g,b,a);
 		this.gameObject.GetComponentInChildren<Renderer>().material.color = playerColor;
 	}
+
+    private void Die()
+    {
+        StopCoroutine(playerPowers.WaitForSaveOkNow);
+        StartCoroutine(playerPowers.WaitForSaveOkNow);
+        playerPowers.saves[playerPowers.CurrSave].GetComponent<Save>().GetSave();
+
+
+    }
+
 }
