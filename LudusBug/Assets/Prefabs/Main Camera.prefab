@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 124936411449641360}
   - component: {fileID: 81401180472485092}
   - component: {fileID: 114731034997937460}
-  - component: {fileID: 114413203683603618}
   - component: {fileID: 114284353524016298}
+  - component: {fileID: 114050887089010358}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -133,6 +133,17 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1250929449301074}
   m_Enabled: 1
+--- !u!114 &114050887089010358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250929449301074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e329d7548316354fb3706494a1e8c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114209358895095350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,17 +164,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 412eccf934fcb86469d9611aedf6ec3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114413203683603618
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1250929449301074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e329d7548316354fb3706494a1e8c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114564277138177468
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scroll: 26.5
   scrollSpeed: 15
-  min: 25
-  max: 28
+  min: 20
+  max: 30
   targetPoint: {fileID: 0}
   speed: 20
   quickSpeed: 100
