@@ -9,19 +9,20 @@ public class PlayerMovement2 : MonoBehaviour
     Rigidbody rb;
     public float speed;
     public float baseSpeed = 5;
-
+    public PlayerPowers player;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         speed = baseSpeed;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerPowers>();
     }
 
 
     void FixedUpdate()
     {
-		if (!Camera.main.GetComponent<Zoom> ().isOnPosition ())
+		if (!Camera.main.GetComponent<Zoom> ().isOnPosition () && !(player.effectingObject && player.effectingObject.GetComponent<Bobine>().isAccelerating))
 			return;
 		float hDir = Input.GetAxisRaw ("Horizontal") * speed * Time.deltaTime;
 		float vDir = Input.GetAxisRaw ("Vertical") * speed * Time.deltaTime;

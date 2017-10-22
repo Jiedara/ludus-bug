@@ -10,6 +10,7 @@ public class PlayerPowers : MonoBehaviour {
     public GameObject save;
     public int CurrSave = 0;
     public bool saveOk = true;
+    public GameObject effectingObject;
 
     public IEnumerator WaitForSaveOkNow;
 
@@ -32,12 +33,16 @@ public class PlayerPowers : MonoBehaviour {
     }
 
     /*
-    private void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        save = (GameObject)Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
-        save.GetComponent<Save>().SetSave();
-        saves[0] = save;
-    }*/
+        if (collision.gameObject.tag != "Bobine")
+        {
+            GetComponent<PlayerMovement2>().speed = GetComponent<PlayerMovement2>().baseSpeed;
+
+
+        }
+    }
+    */
 
     void Update () {
         if (Input.GetButtonDown("Fire1") && GameManager.powerOk  /* && saveOk */)

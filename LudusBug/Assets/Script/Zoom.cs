@@ -57,4 +57,9 @@ public class Zoom : MonoBehaviour {
 	public void setSpeed(float speed){
 		this.speed = speed;
 	}
+    public void resetSpeed()
+    {
+        speed = initSpeed;
+    }
+
 }
