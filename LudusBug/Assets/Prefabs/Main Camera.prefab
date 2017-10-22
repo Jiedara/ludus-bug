@@ -110,7 +110,8 @@ MonoBehaviour:
   min: 25
   max: 28
   targetPoint: {fileID: 0}
-  speed: 10
+  speed: 20
+  quickSpeed: 100
 --- !u!124 &124936411449641360
 Behaviour:
   m_ObjectHideFlags: 1
