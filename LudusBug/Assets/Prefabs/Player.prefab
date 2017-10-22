@@ -74,7 +74,7 @@ Transform:
   m_GameObject: {fileID: 1727050477688940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4913150052043254}
   m_RootOrder: 0
@@ -120,7 +120,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 883c150729712a34ca593b4c8ad27c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -311,8 +311,8 @@ MonoBehaviour:
   _currEnergy: 0
   respawn: {fileID: 8300000, guid: c56b05f7028cfae41aac9f08a3f4789a, type: 3}
   perteEnergie: {fileID: 8300000, guid: c61a1a158941b1d4187781162a58d421, type: 3}
-  lowestColor: {r: 1, g: 0.99168354, b: 0.6985294, a: 0}
-  highestColor: {r: 0.18382353, g: 0.93245435, b: 1, a: 0}
+  lowestColor: {r: 1, g: 0.97241366, b: 0, a: 0}
+  highestColor: {r: 0, g: 0.91724133, b: 1, a: 0}
 --- !u!114 &114826875563174960
 MonoBehaviour:
   m_ObjectHideFlags: 1

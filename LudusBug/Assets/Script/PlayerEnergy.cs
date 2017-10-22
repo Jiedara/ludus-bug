@@ -40,6 +40,7 @@ public class PlayerEnergy : MonoBehaviour {
 	}
     void Awake () {
     // Use this for initialization
+		audioSource = GetComponent<AudioSource>();
         _currEnergy = StartEnergy;
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
         playerPowers = GetComponent<PlayerPowers>();
