@@ -1,7 +1,7 @@
 # ludus-bug
-LUDUS game jam | BUG
+LUDUS game jam | theme : BUG
 
-
-### Pattern printed circuit
-
-https://www.google.be/search?tbm=isch&q=pattern+printed+circuit&tbs=imgo:1&gws_rd=cr&dcr=0&ei=S4nrWcyxO4SwadXYo4gH
+* Antonin Riche
+* Noémie Scherer
+* John Flex
+* Martin Villanove
