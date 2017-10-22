@@ -11,7 +11,7 @@ public class PlayerEnergy : MonoBehaviour {
     float EnergyConsumptionSpeed;
     float BaseEnergyConsumptionSpeed = 1;
     [SerializeField]
-    float StartEnergy = 500;
+    public float StartEnergy = 500;
     [SerializeField]
     float ResistanceCoeff = 25;
     
