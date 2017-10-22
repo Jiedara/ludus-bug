@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 4354293210583564}
   - component: {fileID: 33888283829157468}
   - component: {fileID: 23319971480391354}
+  - component: {fileID: 65884041091439182}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -99,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1593204740818060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -48.93, y: 0.5, z: 133.48}
+  m_LocalPosition: {x: -50, y: 0.5, z: 133.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4354293210583564}
@@ -171,7 +172,19 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 2, z: 0.7}
+  m_Size: {x: 0.7, y: 0.7, z: 0.7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65884041091439182
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727050477688940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82660303323417726
 AudioSource:

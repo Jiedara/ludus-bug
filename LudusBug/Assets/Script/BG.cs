@@ -31,6 +31,6 @@ public class BG : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = camera.transform.position;
+        //transform.position = camera.transform.position;
 	}
 }
