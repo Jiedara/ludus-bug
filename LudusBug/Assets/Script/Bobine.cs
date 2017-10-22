@@ -7,7 +7,7 @@ public class Bobine : MonoBehaviour {
     float acceleration = 5;
     float accelerationDuree = 2;
     IEnumerator acceleratingNow;
-    private bool isAccelerating = false;
+    public bool isAccelerating = false;
 
 	void Start () {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement2>();
