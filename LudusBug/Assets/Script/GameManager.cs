@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public static int maxSaves = 3;
     [SerializeField]
     public static int maxSavesTmp = 3;
+    public static GameObject BGSphere;
 
 
 
