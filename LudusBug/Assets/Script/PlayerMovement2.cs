@@ -21,6 +21,8 @@ public class PlayerMovement2 : MonoBehaviour
 
     void FixedUpdate()
     {
+		if (!Camera.main.GetComponent<Zoom> ().isOnPosition ())
+			return;
 		float hDir = Input.GetAxisRaw ("Horizontal") * speed * Time.deltaTime;
 		float vDir = Input.GetAxisRaw ("Vertical") * speed * Time.deltaTime;
 

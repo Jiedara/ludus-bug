@@ -45,23 +45,12 @@ public class PlayerEnergy : MonoBehaviour {
         playerPowers = GetComponent<PlayerPowers>();
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Resistance")
-        {
-            EnergyConsumptionSpeed *= ResistanceCoeff;
-            GameManager.powerOk = false;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Resistance")
-        {
-            EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
-            GameManager.powerOk = true;
-        }
-    }
+	bool _handicap = false;
+	public void setHandicap(bool active){
+		_handicap = active;
+		EnergyConsumptionSpeed = active?EnergyConsumptionSpeed*ResistanceCoeff:BaseEnergyConsumptionSpeed;
+		GameManager.powerOk = !active;
+	}
 
     void Update () {
 		AddEnergy( - Time.deltaTime * EnergyConsumptionSpeed);
@@ -106,9 +95,9 @@ public class PlayerEnergy : MonoBehaviour {
 
     private void Die()
     {
+		Camera.main.GetComponent<Zoom> ().setSpeed (Camera.main.GetComponent<Zoom> ().quickSpeed);
         //StopCoroutine(playerPowers.WaitForSaveOkNow);
         //StartCoroutine(playerPowers.WaitForSaveOkNow);
-        print(playerPowers.CurrSave);
         playerPowers.saves[playerPowers.CurrSave].GetComponent<Save>().GetSave();
         audioSource.clip = respawn;
         audioSource.Play();
