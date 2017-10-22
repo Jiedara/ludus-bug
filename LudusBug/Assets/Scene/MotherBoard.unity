@@ -2727,6 +2727,16 @@ Prefab:
       propertyPath: m_Name
       value: Wire (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114996163412308988, guid: 27e8640d331eae644aab3fb423b998e9,
+        type: 2}
+      propertyPath: sceneName
+      value: Ram
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996163412308988, guid: 27e8640d331eae644aab3fb423b998e9,
+        type: 2}
+      propertyPath: entryPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27e8640d331eae644aab3fb423b998e9, type: 2}
   m_IsPrefabParent: 0
@@ -2776,6 +2786,16 @@ Prefab:
     - target: {fileID: 4002221901233564, guid: 27e8640d331eae644aab3fb423b998e9, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996163412308988, guid: 27e8640d331eae644aab3fb423b998e9,
+        type: 2}
+      propertyPath: sceneName
+      value: Peripheral
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996163412308988, guid: 27e8640d331eae644aab3fb423b998e9,
+        type: 2}
+      propertyPath: entryPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27e8640d331eae644aab3fb423b998e9, type: 2}
