@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 33888283829157468}
   - component: {fileID: 23319971480391354}
   - component: {fileID: 65884041091439182}
+  - component: {fileID: 114336960030923580}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -265,6 +266,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114336960030923580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727050477688940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb04da8fbf10fc4898625c52ff2db4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steps: 0.3
 --- !u!114 &114369428608179332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,6 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   baseSpeed: 15
+  player: {fileID: 0}
 --- !u!114 &114479400899958588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -293,6 +307,7 @@ MonoBehaviour:
   save: {fileID: 0}
   CurrSave: 0
   saveOk: 1
+  effectingObject: {fileID: 0}
 --- !u!114 &114591525692343184
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -25,8 +25,8 @@ public class PlayerPowers : MonoBehaviour {
 
     void makeSavePoint(Scene scene, LoadSceneMode mode)
     {
-        saves = new GameObject[GameManager.maxSaves + 2];
         GameManager.maxSaves = GameManager.maxSavesTmp;
+        saves = new GameObject[GameManager.maxSaves + 2];
         save = (GameObject)Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
         save.GetComponent<Save>().SetSave();
         saves[0] = save;
