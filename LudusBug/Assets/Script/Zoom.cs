@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Zoom : MonoBehaviour {
 	[SerializeField]
@@ -25,10 +26,35 @@ public class Zoom : MonoBehaviour {
 
 	private float initSpeed;
 
+
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += GetCameraGoal;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded += GetCameraGoal;
+    }
+
+    void GetCameraGoal(Scene scene, LoadSceneMode mode)
+    {
+        Transform[] transforms = GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<Transform>();
+        foreach (Transform trans in transforms)
+        {
+            if (trans.name == "CameraPoint")
+            {
+                targetPoint = trans;
+            }
+        }
+    }
+
     //public float ZoomSpeed;
-	// Use this for initialization
-	void Start () {
-		initSpeed = speed;
+    // Use this for initialization
+    void Start () {
+        
+
+            initSpeed = speed;
 		if (!Camera.main) {
 			Debug.LogWarning ("No Main Camera ! it should have tag MainCamera");
 		} else {
