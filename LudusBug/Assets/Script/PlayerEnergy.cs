@@ -89,7 +89,7 @@ public class PlayerEnergy : MonoBehaviour {
 		playerColor = new Color (r, g, b);
 
 		float light = _energySpend;
-		playerColor += (light);
+		//playerColor += (light);
 
 		Renderer renderer = this.gameObject.GetComponentInChildren<Renderer> ();
 		renderer.material.color = playerColor;
