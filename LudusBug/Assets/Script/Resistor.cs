@@ -9,12 +9,12 @@ public class Resistor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ForceField ff = gameObject.transform.GetChild (1).gameObject.AddComponent<ForceField> ();
-		gameObject.transform.GetChild (0).gameObject.AddComponent<Component> ().BindForceField(ff,resistorResetTime);
+		gameObject.transform.GetChild (0).gameObject.AddComponent<Component> ().BindForceField(ff,this.resistorResetTime);
     }
 
 	class Component : MonoBehaviour{
 		public IEnumerator disableForceFieldNow;
-		public float resistorResetTime = 2;
+		public float reset = 2;
 
 		ForceField ff;
 
@@ -22,9 +22,9 @@ public class Resistor : MonoBehaviour {
 			//disableForceFieldNow = disableForceField(resistorResetTime);
 		}
 
-		public void BindForceField(ForceField ff,float ResistorResetTime){
+		public void BindForceField(ForceField ff,float reset){
 			this.ff = ff;
-			this.resistorResetTime = resistorResetTime;
+			this.reset = reset;
 		}
 
 		public void OnTriggerEnter(Collider col)
@@ -33,7 +33,7 @@ public class Resistor : MonoBehaviour {
 				return;
 			print ("enter resistor");
 			StopAllCoroutines ();
-			StartCoroutine(disableForceField(resistorResetTime));
+			StartCoroutine(disableForceField(reset));
 			//col.gameObject.GetComponent<PlayerEnergy> ().setHandicap (false);
 		}
 
@@ -44,7 +44,6 @@ public class Resistor : MonoBehaviour {
 			yield return new WaitForSeconds(wait);
 			print ("disableForceField active "+true);
 			ff.setActive (true);
-			yield return null;
 		}
 
 		public void OnTriggerExit(Collider col)
@@ -57,13 +56,16 @@ public class Resistor : MonoBehaviour {
 
 	class ForceField : MonoBehaviour{
 		bool inside = false;
+		bool active = true;
 		public void OnTriggerEnter(Collider col)
 		{
 			if (!col.gameObject.CompareTag ("Player"))
 				return;
 			print ("enter force field");
 			inside = true;
-			col.gameObject.GetComponent<PlayerEnergy> ().setHandicap (true);
+			if (active) {
+				col.gameObject.GetComponent<PlayerEnergy> ().setHandicap (true);
+			}
 		}
 		public void OnTriggerExit(Collider col)
 		{
@@ -76,6 +78,7 @@ public class Resistor : MonoBehaviour {
 		}
 
 		public void setActive(bool active){
+			this.active = active;
 			if (active && inside) {
 				GameObject.FindWithTag ("Player").gameObject.GetComponent<PlayerEnergy> ().setHandicap (true);
 			} else {
