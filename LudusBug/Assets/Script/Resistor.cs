@@ -3,38 +3,87 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Resistor : MonoBehaviour {
-    Collider trigger;
-    Renderer rd;
-    float resistorResetTime = 2;
-    IEnumerator disableForceFieldNow;
 
 	// Use this for initialization
 	void Start () {
-        trigger = GetComponentsInChildren<Collider>()[1];
-        rd = GetComponentsInChildren<Renderer>()[1];
-        disableForceFieldNow = disableForceField(resistorResetTime);
+		ForceField ff = gameObject.transform.GetChild (1).gameObject.AddComponent<ForceField> ();
+		gameObject.transform.GetChild (0).gameObject.AddComponent<Component> ().BindForceField(ff);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            StartCoroutine(disableForceFieldNow);
-        }
-    }
+	class Component : MonoBehaviour{
+		public IEnumerator disableForceFieldNow;
+		public float resistorResetTime = 2;
 
-    IEnumerator disableForceField(float wait)
-    {
-        rd.enabled = false;
-        trigger.enabled = false;
-        yield return new WaitForSeconds(wait);
-        rd.enabled = true;
-        trigger.enabled = true;
+		ForceField ff;
 
-    }
+		void Start () {
+			//disableForceFieldNow = disableForceField(resistorResetTime);
+		}
 
-    // Update is called once per frame
-    void Update () {
-		
+		public void BindForceField(ForceField ff){
+			this.ff = ff;
+		}
+
+		public void OnTriggerEnter(Collider col)
+		{
+			if (!col.gameObject.CompareTag ("Player"))
+				return;
+			print ("enter resistor");
+			StopAllCoroutines ();
+			StartCoroutine(disableForceField(resistorResetTime));
+			//col.gameObject.GetComponent<PlayerEnergy> ().setHandicap (false);
+		}
+
+		public IEnumerator disableForceField(float wait)
+		{
+			print ("disableForceField active "+false);
+			ff.setActive (false);
+			yield return new WaitForSeconds(wait);
+			print ("disableForceField active "+true);
+			ff.setActive (true);
+			yield return null;
+		}
+
+		public void OnTriggerExit(Collider col)
+		{
+			if (!col.gameObject.CompareTag ("Player"))
+				return;
+			print ("quit resistor");
+		}
+	}
+
+	class ForceField : MonoBehaviour{
+		bool inside = false;
+		public void OnTriggerEnter(Collider col)
+		{
+			if (!col.gameObject.CompareTag ("Player"))
+				return;
+			print ("enter force field");
+			inside = true;
+			col.gameObject.GetComponent<PlayerEnergy> ().setHandicap (true);
+		}
+		public void OnTriggerExit(Collider col)
+		{
+			if (!col.gameObject.CompareTag ("Player"))
+				return;
+			print ("quit force field");
+			inside = false;
+			col.gameObject.GetComponent<PlayerEnergy> ().setHandicap (false);
+
+		}
+
+		public void setActive(bool active){
+			print ("active : " + active);
+			if (active && inside) {
+				GameObject.FindWithTag ("Player").gameObject.GetComponent<PlayerEnergy> ().setHandicap (true);
+			} else {
+				GameObject.FindWithTag ("Player").gameObject.GetComponent<PlayerEnergy> ().setHandicap (false);
+			}
+			gameObject.GetComponent<Renderer> ().enabled = active;
+		}
+
+		public void Update(){
+			print (inside);
+		}
 	}
 }
