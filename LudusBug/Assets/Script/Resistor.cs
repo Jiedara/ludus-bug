@@ -73,17 +73,12 @@ public class Resistor : MonoBehaviour {
 		}
 
 		public void setActive(bool active){
-			print ("active : " + active);
 			if (active && inside) {
 				GameObject.FindWithTag ("Player").gameObject.GetComponent<PlayerEnergy> ().setHandicap (true);
 			} else {
 				GameObject.FindWithTag ("Player").gameObject.GetComponent<PlayerEnergy> ().setHandicap (false);
 			}
 			gameObject.GetComponent<Renderer> ().enabled = active;
-		}
-
-		public void Update(){
-			print (inside);
 		}
 	}
 }
