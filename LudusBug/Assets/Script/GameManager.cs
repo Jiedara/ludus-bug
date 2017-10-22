@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     public static int maxSavesTmp = 3;
     public static GameObject BGSphere;
+    public static GameObject MainCamera;
 
 
 
