@@ -321,7 +321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overvoltageSpeed: 1
   EnergyConsumptionSpeed: 1
-  StartEnergy: 500
+  StartEnergy: 150
   ResistanceCoeff: 25
   _currEnergy: 0
   respawn: {fileID: 8300000, guid: c56b05f7028cfae41aac9f08a3f4789a, type: 3}
