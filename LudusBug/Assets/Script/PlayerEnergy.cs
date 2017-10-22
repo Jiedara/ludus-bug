@@ -40,6 +40,7 @@ public class PlayerEnergy : MonoBehaviour {
 	}
     void Awake () {
     // Use this for initialization
+		audioSource = GetComponent<AudioSource>();
         _currEnergy = StartEnergy;
         EnergyConsumptionSpeed = BaseEnergyConsumptionSpeed;
         playerPowers = GetComponent<PlayerPowers>();
@@ -81,12 +82,14 @@ public class PlayerEnergy : MonoBehaviour {
 
 	private void CalcMaterial(){
 		Color playerColor;
-		//float light = _isSpendingEnergy ? 2 : 0;
 		float ratio = _currEnergy / StartEnergy;
 		float r = lowestColor.r * (1 - ratio) + highestColor.r * ratio;
 		float g = lowestColor.g * (1 - ratio) + highestColor.g * ratio;
 		float b = lowestColor.b * (1 - ratio) + highestColor.b * ratio;
 		playerColor = new Color (r, g, b);
+
+		float light = _energySpend;
+		//playerColor += (light);
 
 		Renderer renderer = this.gameObject.GetComponentInChildren<Renderer> ();
 		renderer.material.color = playerColor;

@@ -30,6 +30,8 @@ public class Switch : MonoBehaviour {
 	}
 
 	public void SwitchProgramsState(){
+		if (!GameManager.powerOk)
+			return;
 		State = !State;
 		foreach (Program prog in list) {
 			prog.Switch ();
@@ -38,7 +40,7 @@ public class Switch : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.CompareTag ("Player")) {
+		if (col.gameObject.CompareTag ("Player") && GameManager.powerOk ) {
 			SwitchProgramsState ();
             GetComponent<AudioSource>().Play();
         }

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Resistor : MonoBehaviour {
 
+	public float resistorResetTime = 10;
+
 	// Use this for initialization
 	void Start () {
 		ForceField ff = gameObject.transform.GetChild (1).gameObject.AddComponent<ForceField> ();
-		gameObject.transform.GetChild (0).gameObject.AddComponent<Component> ().BindForceField(ff);
+		gameObject.transform.GetChild (0).gameObject.AddComponent<Component> ().BindForceField(ff,resistorResetTime);
     }
 
 	class Component : MonoBehaviour{
@@ -20,8 +22,9 @@ public class Resistor : MonoBehaviour {
 			//disableForceFieldNow = disableForceField(resistorResetTime);
 		}
 
-		public void BindForceField(ForceField ff){
+		public void BindForceField(ForceField ff,float ResistorResetTime){
 			this.ff = ff;
+			this.resistorResetTime = resistorResetTime;
 		}
 
 		public void OnTriggerEnter(Collider col)
