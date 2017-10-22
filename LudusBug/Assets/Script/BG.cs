@@ -26,8 +26,17 @@ public class BG : MonoBehaviour {
     // Use this for initialization
     void Start () {
         camera = GameObject.FindGameObjectWithTag("MainCamera");
-        DontDestroyOnLoad(this);
-	}
+        if (GameManager.BGSphere == null)
+        {
+            GameManager.BGSphere = gameObject;
+            DontDestroyOnLoad(this);
+        }
+        else if (GameManager.BGSphere != this)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
