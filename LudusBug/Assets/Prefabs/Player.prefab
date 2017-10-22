@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114591525692343184}
   - component: {fileID: 114369428608179332}
   - component: {fileID: 114479400899958588}
-  - component: {fileID: 114611768408368452}
   - component: {fileID: 114826875563174960}
   - component: {fileID: 82660303323417726}
   m_Layer: 0
@@ -278,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  baseSpeed: 5
+  baseSpeed: 15
 --- !u!114 &114479400899958588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -314,19 +313,6 @@ MonoBehaviour:
   perteEnergie: {fileID: 8300000, guid: c61a1a158941b1d4187781162a58d421, type: 3}
   lowestColor: {r: 1, g: 0.99168354, b: 0.6985294, a: 0}
   highestColor: {r: 0.18382353, g: 0.93245435, b: 1, a: 0}
---- !u!114 &114611768408368452
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1593204740818060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81b87e65aaf983d4eba3ab421f5ccd2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  baseSpeed: 5
 --- !u!114 &114826875563174960
 MonoBehaviour:
   m_ObjectHideFlags: 1
