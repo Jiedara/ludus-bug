@@ -1,0 +1,552 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics (ID=0x22b0)
+    Vendor:   Intel
+    VRAM:     1117 MB
+    Driver:   20.19.15.4424
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\ludus-bug\LudusBug\final_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\ludus-bug\LudusBug\final_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\ludus-bug\LudusBug\final_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\ludus-bug\LudusBug\final_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\ludus-bug\LudusBug\final_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\ludus-bug\LudusBug\final_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\ludus-bug\LudusBug\final_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\ludus-bug\LudusBug\final_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.060 seconds
+Platform assembly: D:\ludus-bug\LudusBug\final_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\ludus-bug\LudusBug\final_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1280 60Hz; virtual: 1920x1280 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.963934 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1a50 -> priority: 1 
+  Thread -> id: 25ec -> priority: 1 
+enter resistor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+disableForceField active False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit resistor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.440750 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1221.
+Total: 1.312682 ms (FindLiveObjects: 0.382092 ms CreateObjectMapping: 0.113283 ms MarkObjects: 0.695702 ms  DeleteObjects: 0.119043 ms)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "EndPoint (1)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "EndPoint/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Coude (2)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Intersection (1)/CopperWay (4)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Intersection (1)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.684533 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 7098.
+Total: 3.658357 ms (FindLiveObjects: 1.403564 ms CreateObjectMapping: 0.348171 ms MarkObjects: 1.754936 ms  DeleteObjects: 0.150404 ms)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (6)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (6)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (6)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (6)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (5)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (5)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (5)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (5)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (2)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (2)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (2)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (2)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (1)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (1)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (1)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (1)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (1)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (2)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (2)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (2)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Keyboard/Cross (2)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (3)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (3)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (3)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (3)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (4)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (4)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (4)/CopperWay (1)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Mouse/Cross (4)/CopperWay (3)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+player enter in capacitor area
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+player exit capacitor area
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+player enter in capacitor area
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+player exit capacitor area
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+player enter in capacitor area
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+player exit capacitor area
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter resistor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+disableForceField active False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit resistor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+enter resistor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+disableForceField active False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit resistor
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+disableForceField active True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 48.100739 ms
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:GetComponentFastPath (System.Type,intptr)
+  at UnityEngine.Component.GetComponent[Renderer] () [0x00000] in <filename unknown>:0 
+  at BG.changeBG (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at UnityEngine.SceneManagement.SceneManager.Internal_SceneLoaded (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 1232.
+Total: 0.987551 ms (FindLiveObjects: 0.268168 ms CreateObjectMapping: 0.071682 ms MarkObjects: 0.430093 ms  DeleteObjects: 0.216326 ms)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "EndPoint (1)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "EndPoint/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Coude (2)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Intersection (1)/CopperWay (4)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Intersection (1)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.963582 ms
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:GetComponentFastPath (System.Type,intptr)
+  at UnityEngine.Component.GetComponent[Renderer] () [0x00000] in <filename unknown>:0 
+  at BG.changeBG (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at UnityEngine.SceneManagement.SceneManager.Internal_SceneLoaded (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1069.
+Total: 0.760984 ms (FindLiveObjects: 0.235527 ms CreateObjectMapping: 0.061441 ms MarkObjects: 0.392332 ms  DeleteObjects: 0.070402 ms)
+
+enter force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+quit force field
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.789849 ms
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:GetComponentFastPath (System.Type,intptr)
+  at UnityEngine.Component.GetComponent[Renderer] () [0x00000] in <filename unknown>:0 
+  at BG.changeBG (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  at UnityEngine.SceneManagement.SceneManager.Internal_SceneLoaded (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1256.
+Total: 1.297321 ms (FindLiveObjects: 0.314250 ms CreateObjectMapping: 0.077442 ms MarkObjects: 0.769304 ms  DeleteObjects: 0.134404 ms)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "EndPoint (1)/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "EndPoint/CopperWay/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Coude (2)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Intersection (1)/CopperWay (4)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
+Non-convex MeshCollider with non-kinematic Rigidbody is no longer supported in Unity 5.
+If you want to use a non-convex mesh either make the Rigidbody kinematic or remove the Rigidbody component. Scene hierarchy path "Intersection (1)/CopperWay (2)/Plane", Mesh asset path "" Mesh name "Plane"
+ 
+(Filename:  Line: 0)
+
