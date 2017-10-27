@@ -68,6 +68,10 @@ public class Zoom : MonoBehaviour {
 		if (Camera.main) {
 			if (isOnPosition ())
 				speed = initSpeed;
+            else
+            {
+                speed = quickSpeed;
+            }
 			scroll += Input.GetAxis ("Mouse ScrollWheel");
 			scroll = Mathf.Clamp (scroll, min, max);
 			Camera.main.fieldOfView = scroll*scrollSpeed;

@@ -199,7 +199,7 @@ MonoBehaviour:
   max: 30
   targetPoint: {fileID: 0}
   speed: 20
-  quickSpeed: 100
+  quickSpeed: 50
 --- !u!114 &114889118811155262
 MonoBehaviour:
   m_ObjectHideFlags: 1

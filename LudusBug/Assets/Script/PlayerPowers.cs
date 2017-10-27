@@ -15,16 +15,22 @@ public class PlayerPowers : MonoBehaviour {
     public IEnumerator WaitForSaveOkNow;
 
     void OnDisable() {
-        SceneManager.sceneLoaded -= makeSavePoint;
+        SceneManager.sceneLoaded -= makeSavePointNow;
 
     }
      void OnEnable()
     {
-        SceneManager.sceneLoaded += makeSavePoint;
+        SceneManager.sceneLoaded += makeSavePointNow;
     }
 
-    void makeSavePoint(Scene scene, LoadSceneMode mode)
+    void makeSavePointNow(Scene scene, LoadSceneMode mode)
     {
+        StartCoroutine("makeSavePoint");
+    }
+
+    IEnumerator makeSavePoint()
+    {
+        yield return new WaitForSeconds(.1f);
         GameManager.maxSaves = GameManager.maxSavesTmp;
         saves = new GameObject[GameManager.maxSaves + 2];
         save = (GameObject)Instantiate(Resources.Load("Save"), transform.position, transform.rotation);
